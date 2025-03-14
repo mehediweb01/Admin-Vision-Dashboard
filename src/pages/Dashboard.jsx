@@ -7,7 +7,7 @@ const Dashboard = () => {
     fetch("/src/db/data.json")
       .then((res) => res.json())
       .then((data) => setKpi(data.kpi));
-  });
+  },[kpi]);
   return (
     <main className="my-8 me-4">
       {/* kpi card start */}
