@@ -6,8 +6,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="h-screen flex bg-gradient-to-r from-blue-300/75 to-slate-800">
-          <div className="w-[13%] h-full bg-red-200">{/* side bar */}</div>
+        <main className="min-h-screen flex bg-gradient-to-r from-blue-300/75 to-slate-800">
+          <div className="w-[13%] min-h-screen bg-gradient-to-b from-sky-500/40 to-white/60">
+            {/* side bar */}
+          </div>
           <div className="w-full">
             <Navbar />
             <Routes>
