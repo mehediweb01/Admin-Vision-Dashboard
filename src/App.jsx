@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <section className="flex bg-gradient-to-r from-blue-300/75 to-slate-800">
+        <main className="h-screen flex bg-gradient-to-r from-blue-300/75 to-slate-800">
           <div className="w-[13%] h-full bg-red-200">{/* side bar */}</div>
           <div className="w-full">
             <Navbar />
@@ -14,7 +14,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
             </Routes>
           </div>
-        </section>
+        </main>
       </BrowserRouter>
     </>
   );
