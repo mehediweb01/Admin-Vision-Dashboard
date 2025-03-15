@@ -2,7 +2,7 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 const Welcome = () => {
   return (
-    <div className="flex justify-between items-start bg-gradient-to-r from-black/70 to-blue-400 p-4 rounded-md shadow-inner shadow-sky-300 h-[200px]">
+    <div className="flex justify-between items-start bg-gradient-to-r from-black/70 to-blue-400 p-4 rounded-md shadow-inner shadow-sky-300 h-[280px]">
       <div className="flex flex-col justify-between h-full">
         <div className="space-y-2">
           <h3 className="font-light text-sm text-gray-400 ">Welcome back,</h3>
