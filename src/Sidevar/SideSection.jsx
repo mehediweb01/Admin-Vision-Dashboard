@@ -2,7 +2,7 @@ import React from 'react'
 
 function SideSection() {
   return (
-    <div>SideSection</div>
+    <div>SideSection updated push</div>
   )
 }
 
