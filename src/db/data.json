@@ -28,5 +28,70 @@
       "percent": "+7",
       "image": "/images/sales.png"
     }
+  ],
+  "overData": [
+    {
+      "amt": 500
+    },
+    {
+      "name": "jan",
+      "sales": 300,
+      "p": 500
+    },
+    {
+      "name": "feb",
+      "sales": 200,
+      "p": 150
+    },
+    {
+      "name": "mar",
+      "sales": 450,
+      "p": 300
+    },
+    {
+      "name": "apr",
+      "sales": 500,
+      "p": 400
+    },
+    {
+      "name": "may",
+      "sales": 100,
+      "p": 200
+    },
+    {
+      "name": "jun",
+      "sales": 400,
+      "p": 100
+    },
+    {
+      "name": "jul",
+      "sales": 500,
+      "p": 150
+    },
+    {
+      "name": "aug",
+      "sales": 300,
+      "p": 300
+    },
+    {
+      "name": "sep",
+      "sales": 500,
+      "p": 500
+    },
+    {
+      "name": "oct",
+      "sales": 350,
+      "p": 250
+    },
+    {
+      "name": "nov",
+      "sales": 400,
+      "p": 500
+    },
+    {
+      "name": "dec",
+      "sales": 200,
+      "p": 100
+    }
   ]
 }
