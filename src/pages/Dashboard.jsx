@@ -3,6 +3,7 @@ import KPICard from "../components/dashboard/KPICard";
 import Welcome from "../components/dashboard/Welcome";
 import Satisfaction from "../components/dashboard/Satisfaction";
 import Tracking from "../components/dashboard/Tracking";
+import Overview from "../components/dashboard/charts/Overview";
 
 const Dashboard = () => {
   const [kpi, setKpi] = useState([]);
@@ -27,6 +28,23 @@ const Dashboard = () => {
         <Tracking value={95} />
       </div>
       {/* welcome,satisfaction, tracking card start end */}
+      {/* overview start */}
+      <div className="flex sm:flex-row flex-col justify-between items-center gap-2 ">
+        <div className="bg-gradient-to-r from-black/90 to-black/60 py-1 rounded-sm">
+          <div className="p-4">
+            <h1 className="text-white font-semibold tracking-[1px]">
+              Sales overview
+            </h1>
+            <p className="text-green-400 text-xs font-thin tracking-[2px]">
+              (5+ more){" "}
+              <span className="text-white">in {new Date().getFullYear()}</span>
+            </p>
+          </div>
+          <Overview />
+        </div>
+        <div></div>
+      </div>
+      {/* overview end */}
     </main>
   );
 };
