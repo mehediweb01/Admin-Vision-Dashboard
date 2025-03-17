@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [kpiWidgets, setKpiWidget] = useState([]);
   useEffect(() => {
     try {
-      fetch("./src/db/data.json")
+      fetch("/data.json")
         .then((res) => res.json())
         .then((data) => {
           setKpi(data.kpi);

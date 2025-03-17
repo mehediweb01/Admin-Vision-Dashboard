@@ -12,7 +12,7 @@ const ActiveUser = () => {
   const [user, setUser] = useState([]);
   useEffect(() => {
     try {
-      fetch("./src/db/data.json")
+      fetch("/data.json")
         .then((res) => res.json())
         .then((data) => setUser(data.rangeData));
     } catch (err) {

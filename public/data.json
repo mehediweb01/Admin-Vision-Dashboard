@@ -1,0 +1,152 @@
+{
+  "kpi": [
+    {
+      "id": 1,
+      "name": "Today's Money",
+      "num": "$30000",
+      "percent": "+30",
+      "image": "/images/money.png"
+    },
+    {
+      "id": 2,
+      "name": "Today's Users",
+      "num": "2300",
+      "percent": "+6",
+      "image": "/images/world.png"
+    },
+    {
+      "id": 3,
+      "name": "New Clients",
+      "num": "600",
+      "percent": "+1",
+      "image": "/images/document.png"
+    },
+    {
+      "id": 4,
+      "name": "Total sales",
+      "num": "$23084450",
+      "percent": "+7",
+      "image": "/images/sales.png"
+    }
+  ],
+  "overData": [
+    {
+      "amt": 500
+    },
+    {
+      "name": "jan",
+      "sales": 300,
+      "p": 500
+    },
+    {
+      "name": "feb",
+      "sales": 200,
+      "p": 150
+    },
+    {
+      "name": "mar",
+      "sales": 450,
+      "p": 300
+    },
+    {
+      "name": "apr",
+      "sales": 500,
+      "p": 400
+    },
+    {
+      "name": "may",
+      "sales": 100,
+      "p": 200
+    },
+    {
+      "name": "jun",
+      "sales": 400,
+      "p": 100
+    },
+    {
+      "name": "jul",
+      "sales": 500,
+      "p": 150
+    },
+    {
+      "name": "aug",
+      "sales": 300,
+      "p": 300
+    },
+    {
+      "name": "sep",
+      "sales": 500,
+      "p": 500
+    },
+    {
+      "name": "oct",
+      "sales": 350,
+      "p": 250
+    },
+    {
+      "name": "nov",
+      "sales": 400,
+      "p": 500
+    },
+    {
+      "name": "dec",
+      "sales": 200,
+      "p": 100
+    }
+  ],
+  "rangeData": [
+    {
+      "users": 10
+    },
+    {
+      "users": 15
+    },
+    {
+      "users": 20
+    },
+    {
+      "users": 50
+    },
+    {
+      "users": 60
+    },
+    {
+      "users": 75
+    },
+    {
+      "users": 75
+    },
+    {
+      "users": 40
+    },
+    {
+      "users": 10
+    }
+  ],
+  "KPIWidget": [
+    {
+      "name": "Users",
+      "countNum": 3000,
+      "image": "/images/money.png",
+      "value": 70
+    },
+    {
+      "name": "Clicks",
+      "countNum": "261m",
+      "image": "/images/click.png",
+      "value": 80
+    },
+    {
+      "name": "Sales",
+      "countNum": "2500$",
+      "image": "/images/sales.png",
+      "value": 60
+    },
+    {
+      "name": "Items",
+      "countNum": 650,
+      "image": "/images/item.png",
+      "value": 85
+    }
+  ]
+}
