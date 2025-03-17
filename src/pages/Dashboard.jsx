@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [kpiWidgets, setKpiWidget] = useState([]);
   useEffect(() => {
     try {
-      fetch("/src/db/data.json")
+      fetch("./src/db/data.json")
         .then((res) => res.json())
         .then((data) => {
           setKpi(data.kpi);
@@ -21,7 +21,7 @@ const Dashboard = () => {
     } catch (err) {
       console.error("Error fetching data:", err.message);
     }
-  }, []);
+  }, [kpi, kpiWidgets]);
   return (
     <main className="my-8 ms-1 me-4">
       {/* kpi card start */}

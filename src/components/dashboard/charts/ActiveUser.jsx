@@ -11,9 +11,13 @@ import {
 const ActiveUser = () => {
   const [user, setUser] = useState([]);
   useEffect(() => {
-    fetch("/src/db/data.json")
-      .then((res) => res.json())
-      .then((data) => setUser(data.rangeData));
+    try {
+      fetch("./src/db/data.json")
+        .then((res) => res.json())
+        .then((data) => setUser(data.rangeData));
+    } catch (err) {
+      console.error("Failed to fetch data:", err.message);
+    }
   }, [user]);
   return (
     <ResponsiveContainer width="100%" height={150}>
