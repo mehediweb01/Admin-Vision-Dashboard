@@ -12,9 +12,13 @@ import {
 const Overview = () => {
   const [overData, setOverData] = useState([]);
   useEffect(() => {
-    fetch("/src/db/data.json")
-      .then((res) => res.json())
-      .then((data) => setOverData(data.overData));
+    try {
+      fetch("./src/db/data.json")
+        .then((res) => res.json())
+        .then((data) => setOverData(data.overData));
+    } catch (err) {
+      console.error("Failed to fetch data:", err.message);
+    }
   }, [overData]);
 
   return (
