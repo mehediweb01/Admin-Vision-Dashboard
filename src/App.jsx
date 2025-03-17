@@ -3,10 +3,12 @@ import Dashboard from "./pages/Dashboard";
 import SideSection from "./Sidevar/SideSection";
 import Navbar from "./components/shared/Navbar";
 
+
 function App() {
   return (
     <>
       <BrowserRouter>
+       
         <SideSection/>
         <Routes>
           <Route path="/" element={<Dashboard />} />
