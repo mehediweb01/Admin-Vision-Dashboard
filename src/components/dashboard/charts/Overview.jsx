@@ -13,7 +13,7 @@ const Overview = () => {
   const [overData, setOverData] = useState([]);
   useEffect(() => {
     try {
-      fetch("./src/db/data.json")
+      fetch("/data.json")
         .then((res) => res.json())
         .then((data) => setOverData(data.overData));
     } catch (err) {
