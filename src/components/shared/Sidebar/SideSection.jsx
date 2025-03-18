@@ -15,79 +15,81 @@ function SideSection() {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setOpen(!isOpen)}
-        className="md:hidden text-white p-3 text-2xl fixed top-5 left-5 bg-gray-800 rounded-lg z-50"
+        className="md:hidden text-white p-1 sm:p-3 text-2xl m-1 bg-gray-800 rounded-lg z-50"
       >
         <FaBars />
       </button>
 
       {/* Sidebar */}
       <div
-        className={`fixed md:relative transition-all duration-300 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 bg-gradient-to-r from-blue-700 to-[#08264428] w-[260px] rounded-r-lg min-h-screen p-4`}
+        className={`hidden md:inline-block w-full rounded-r-lg min-h-screen ps-2 ${
+          isOpen ? "inline-block mt-6 md:mt-0" : "hidden"
+        }`}
       >
         {/* Sidebar Header */}
-        <h2 className="text-xl font-bold text-gray-400 mb-5">Dashboard UI</h2>
-        <div className="border-b border-gray-300 my-4"></div>
+        <h2 className="text-sm sm:text-xl md:m-4 font-bold text-white mb-5">
+          Dashboard UI
+        </h2>
+        <div className="w-full border-b border-gray-300 my-4" />
 
         {/* Sidebar Menu */}
-        <ul>
+        <ul className="flex flex-col sm:items-start items-center">
           <li className="flex items-center gap-3">
             <div className="bg-blue-900 p-3 rounded-full text-white my-3">
               <MdOutlineDashboardCustomize />
             </div>
-            <span className="text-white">Dashboard</span>
+            <span className="text-white hidden sm:inline-block">Dashboard</span>
           </li>
 
           <li className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoMdStats />
             </div>
-            <span className="text-white">Tables</span>
+            <span className="text-white hidden sm:inline-block">Tables</span>
           </li>
 
           <li className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <FaHotTub />
             </div>
-            <span className="text-white">Billing</span>
+            <span className="text-white hidden sm:inline-block">Billing</span>
           </li>
 
           <li className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <GrTechnology className="fill-white" />
             </div>
-            <span className="text-white">RTL</span>
+            <span className="text-white hidden sm:inline-block">RTL</span>
           </li>
         </ul>
 
         {/* Account Pages */}
-        <h3 className="text-white py-3">Account Pages</h3>
-        <ul>
+        <h3 className="text-white py-3 text-sm sm:text-base ">Account Pages</h3>
+        <ul className="flex flex-col sm:items-start items-center">
           <li className="flex items-center gap-4">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoMdPerson />
             </div>
-            <span className="text-white">Profile</span>
+            <span className="text-white hidden sm:inline-block">Profile</span>
           </li>
 
           <li className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoNewspaperOutline />
             </div>
-            <span className="text-white">Sign In</span>
+            <span className="text-white hidden sm:inline-block">Sign In</span>
           </li>
 
           <li className="flex items-center gap-4">
             <div className="bg-blue-900 p-2 rounded-full text-white">
               <FaPaperPlane />
             </div>
-            <span className="text-white">Sign Up</span>
+            <span className="text-white hidden sm:inline-block">Sign Up</span>
           </li>
         </ul>
 
         {/* Help Card */}
-        <div className="mt-16">
+        <div className="mt-16 sm:inline-block hidden">
           <HelpCard />
         </div>
       </div>
