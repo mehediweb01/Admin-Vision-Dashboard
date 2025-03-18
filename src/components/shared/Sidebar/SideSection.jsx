@@ -6,6 +6,7 @@ import { FaHotTub, FaPaperPlane } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import { IoNewspaperOutline } from "react-icons/io5";
 import HelpCard from "./HelpCard";
+import { Link } from "react-router-dom";
 
 function SideSection() {
   const [isOpen, setOpen] = useState(false);
@@ -34,58 +35,58 @@ function SideSection() {
 
         {/* Sidebar Menu */}
         <ul className="flex flex-col sm:items-start items-center">
-          <li className="flex items-center gap-3">
+          <Link to={"/"} className="flex items-center gap-3">
             <div className="bg-blue-900 p-3 rounded-full text-white my-3">
               <MdOutlineDashboardCustomize />
             </div>
             <span className="text-white hidden sm:inline-block">Dashboard</span>
-          </li>
+          </Link>
 
-          <li className="flex items-center gap-3">
+          <Link to={"/tables"} className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoMdStats />
             </div>
             <span className="text-white hidden sm:inline-block">Tables</span>
-          </li>
+          </Link>
 
-          <li className="flex items-center gap-3">
+          <Link to="/billing" className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <FaHotTub />
             </div>
             <span className="text-white hidden sm:inline-block">Billing</span>
-          </li>
+          </Link>
 
-          <li className="flex items-center gap-3">
+          <Link to="/rtl" className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <GrTechnology className="fill-white" />
             </div>
             <span className="text-white hidden sm:inline-block">RTL</span>
-          </li>
+          </Link>
         </ul>
 
         {/* Account Pages */}
         <h3 className="text-white py-3 text-sm sm:text-base ">Account Pages</h3>
         <ul className="flex flex-col sm:items-start items-center">
-          <li className="flex items-center gap-4">
+          <Link to="/profile" className="flex items-center gap-4">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoMdPerson />
             </div>
             <span className="text-white hidden sm:inline-block">Profile</span>
-          </li>
+          </Link>
 
-          <li className="flex items-center gap-3">
+          <Link to="/sign-in" className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoNewspaperOutline />
             </div>
             <span className="text-white hidden sm:inline-block">Sign In</span>
-          </li>
+          </Link>
 
-          <li className="flex items-center gap-4">
+          <Link to="/sign-up" className="flex items-center gap-4">
             <div className="bg-blue-900 p-2 rounded-full text-white">
               <FaPaperPlane />
             </div>
             <span className="text-white hidden sm:inline-block">Sign Up</span>
-          </li>
+          </Link>
         </ul>
 
         {/* Help Card */}
