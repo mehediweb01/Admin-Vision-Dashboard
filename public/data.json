@@ -93,5 +93,60 @@
       "sales": 200,
       "p": 100
     }
+  ],
+  "rangeData": [
+    {
+      "users": 10
+    },
+    {
+      "users": 15
+    },
+    {
+      "users": 20
+    },
+    {
+      "users": 50
+    },
+    {
+      "users": 60
+    },
+    {
+      "users": 75
+    },
+    {
+      "users": 75
+    },
+    {
+      "users": 40
+    },
+    {
+      "users": 10
+    }
+  ],
+  "KPIWidget": [
+    {
+      "name": "Users",
+      "countNum": 3000,
+      "image": "/images/money.png",
+      "value": 70
+    },
+    {
+      "name": "Clicks",
+      "countNum": "261m",
+      "image": "/images/click.png",
+      "value": 80
+    },
+    {
+      "name": "Sales",
+      "countNum": "2500$",
+      "image": "/images/sales.png",
+      "value": 60
+    },
+    {
+      "name": "Items",
+      "countNum": 650,
+      "image": "/images/item.png",
+      "value": 85
+    }
   ]
 }
