@@ -65,7 +65,7 @@ function SignIn() {
           </div>
         </div>
 
-        {/* header */}
+        {/* header part */}
         <div className="absolute top-5 bg-transparent border border-gray-400 shadow backdrop-blur-lg px-2 py-2 mx-auto flex justify-between rounded-2xl  ml-[15%] gap-2 w-[70%]">
           <div className="flex justify-between items-center text-white text-sm">
             <p>Dashboard UI</p>
