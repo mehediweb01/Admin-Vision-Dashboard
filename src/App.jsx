@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import SideSection from "./Sidevar/SideSection";
+import SideSection from "./components/shared/Sidebar/SideSection";
 import Navbar from "./components/shared/Navbar";
-
 
 function App() {
   return (
@@ -14,8 +13,8 @@ function App() {
           <Route path="/" element={<Dashboard />} />
         </Routes>
         <main className="min-h-screen flex bg-gradient-to-r from-blue-300/75 to-slate-800">
-          <div className="w-[13%] min-h-screen bg-gradient-to-b from-sky-500/40 to-white/60">
-            {/* side bar */}
+          <div className="max-w-[20%] min-h-screen bg-gradient-to-b from-sky-500/40 to-black/25">
+            <SideSection />
           </div>
           <div className="w-full">
             <Navbar />
