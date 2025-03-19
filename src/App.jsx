@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import SideSection from "./components/shared/Sidebar/SideSection";
 import Navbar from "./components/shared/Navbar";
+import SignIn from "./SignInUp/SignIn";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="SignIn" element={<SignIn/>} />
             </Routes>
           </div>
         </main>
