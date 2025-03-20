@@ -148,5 +148,69 @@
       "image": "/images/item.png",
       "value": 85
     }
+  ],
+  "projectsData": [
+    {
+      "name": "UI Version",
+      "member": "M",
+      "amount": 2000,
+      "progress": 60
+    },
+    {
+      "name": "Progress Track",
+      "member": "H",
+      "amount": 1000,
+      "progress": 80
+    },
+    {
+      "name": "Full Stack dyn",
+      "member": "J",
+      "amount": 6000,
+      "progress": 40
+    },
+    {
+      "name": "Platform Errors",
+      "member": "K",
+      "amount": 4000,
+      "progress": 75
+    },
+    {
+      "name": "Redesign UI/UX",
+      "member": "Y",
+      "amount": 8000,
+      "progress": 100
+    }
+  ],
+  "orderOverview": [
+    {
+      "details": "$2400, Design changed",
+      "date": "20DEC 7:20PM"
+    },
+    {
+      "details": "$6000, New Orders",
+      "date": "01JAN 5:40PM"
+    },
+    {
+      "details": "$1300, Server payment",
+      "date": "31FEB 4:00PM"
+    },
+    {
+      "details": "$3900, Package Unlock",
+      "date": "09MAR 8:59AM"
+    }
+  ],
+  "links": [
+    {
+      "name": "MarketPlace",
+      "href": "/marketplace"
+    },
+    {
+      "name": "Blog",
+      "href": "/blog"
+    },
+    {
+      "name": "License",
+      "href": "/License"
+    }
   ]
 }
