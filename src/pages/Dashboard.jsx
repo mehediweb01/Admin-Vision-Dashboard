@@ -8,6 +8,9 @@ import ActiveUser from "../components/dashboard/charts/ActiveUser";
 import KPIWidget from "../components/dashboard/KPIWidget";
 import Navbar from "./../components/shared/Navbar";
 import SideSection from "../components/shared/Sidebar/SideSection";
+import ProjectList from "../components/dashboard/ProjectList";
+import OrderOverview from "../components/dashboard/OrderOverview";
+import Footer from "../components/shared/Footer";
 
 const Dashboard = () => {
   const [kpi, setKpi] = useState([]);
@@ -26,26 +29,24 @@ const Dashboard = () => {
   }, [kpi, kpiWidgets]);
   return (
     <main className="flex justify-between items-start">
-      <div className="max-w-[20%] min-h-screen bg-gradient-to-b from-sky-500/40 to-black/25">
+      <div className="max-w-[20%] min-h-screen border-r border-slate-400 mr-1">
         <SideSection />
       </div>
-      <div>
+      <div className="mb-4">
         <Navbar />
-        {/* kpi card start */}
+        {/* kpi card  */}
         <div className="my-8 ms-1 me-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {kpi.map((item) => (
             <KPICard {...item} key={item.id} />
           ))}
         </div>
-        {/* kpi card end */}
-        {/* welcome,satisfaction, tracking card start */}
+        {/* welcome,satisfaction, tracking card  */}
         <div className="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           <Welcome />
           <Satisfaction percentage={90} />
           <Tracking value={95} />
         </div>
-        {/* welcome,satisfaction, tracking card start end */}
-        {/* overview & user start */}
+        {/* overview & user  */}
         <div className="flex sm:flex-row flex-col justify-between items-center gap-2 ">
           <div className="w-full bg-gradient-to-r from-black/90 to-black/60 rounded-sm py-5">
             <div className="p-4">
@@ -80,7 +81,19 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        {/* overview & user end */}
+        {/* ProjectList Tables */}
+        <div className="flex md:flex-row flex-col gap-3 justify-between items-start mt-4">
+          <div className="max-w-full md:max-w-[65%] w-full bg-gradient-to-r from-[#060B28BD] to-sky-800/60 p-2 rounded-md">
+            <ProjectList />
+          </div>
+          <div className="max-w-full md:max-w-[35%] w-full bg-gradient-to-r from-[#060B28BD] to-sky-800/60 p-2 rounded-md">
+            <OrderOverview />
+          </div>
+        </div>
+        {/* footer */}
+        <div className="my-3">
+          <Footer />
+        </div>
       </div>
     </main>
   );
