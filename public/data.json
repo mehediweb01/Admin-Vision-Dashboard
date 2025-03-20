@@ -198,5 +198,19 @@
       "details": "$3900, Package Unlock",
       "date": "09MAR 8:59AM"
     }
+  ],
+  "links": [
+    {
+      "name": "MarketPlace",
+      "href": "/marketplace"
+    },
+    {
+      "name": "Blog",
+      "href": "/blog"
+    },
+    {
+      "name": "License",
+      "href": "/License"
+    }
   ]
 }

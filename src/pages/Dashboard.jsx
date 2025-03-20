@@ -10,6 +10,7 @@ import Navbar from "./../components/shared/Navbar";
 import SideSection from "../components/shared/Sidebar/SideSection";
 import ProjectList from "../components/dashboard/ProjectList";
 import OrderOverview from "../components/dashboard/OrderOverview";
+import Footer from "../components/shared/Footer";
 
 const Dashboard = () => {
   const [kpi, setKpi] = useState([]);
@@ -28,7 +29,7 @@ const Dashboard = () => {
   }, [kpi, kpiWidgets]);
   return (
     <main className="flex justify-between items-start">
-      <div className="max-w-[20%] min-h-screen bg-gradient-to-b from-sky-500/40 to-black/25 mr-1">
+      <div className="max-w-[20%] min-h-screen border-r border-slate-400 mr-1">
         <SideSection />
       </div>
       <div className="mb-4">
@@ -88,6 +89,10 @@ const Dashboard = () => {
           <div className="max-w-full md:max-w-[35%] w-full bg-gradient-to-r from-[#060B28BD] to-sky-800/60 p-2 rounded-md">
             <OrderOverview />
           </div>
+        </div>
+        {/* footer */}
+        <div className="my-3">
+          <Footer />
         </div>
       </div>
     </main>
