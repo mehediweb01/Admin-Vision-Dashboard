@@ -9,6 +9,7 @@ import KPIWidget from "../components/dashboard/KPIWidget";
 import Navbar from "./../components/shared/Navbar";
 import SideSection from "../components/shared/Sidebar/SideSection";
 import ProjectList from "../components/dashboard/ProjectList";
+import OrderOverview from "../components/dashboard/OrderOverview";
 
 const Dashboard = () => {
   const [kpi, setKpi] = useState([]);
@@ -85,7 +86,7 @@ const Dashboard = () => {
             <ProjectList />
           </div>
           <div className="max-w-full md:max-w-[35%] w-full bg-gradient-to-r from-[#060B28BD] to-sky-800/60 p-2 rounded-md">
-            Orders overviews
+            <OrderOverview />
           </div>
         </div>
       </div>

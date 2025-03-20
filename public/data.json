@@ -180,5 +180,23 @@
       "amount": 8000,
       "progress": 100
     }
+  ],
+  "orderOverview": [
+    {
+      "details": "$2400, Design changed",
+      "date": "20DEC 7:20PM"
+    },
+    {
+      "details": "$6000, New Orders",
+      "date": "01JAN 5:40PM"
+    },
+    {
+      "details": "$1300, Server payment",
+      "date": "31FEB 4:00PM"
+    },
+    {
+      "details": "$3900, Package Unlock",
+      "date": "09MAR 8:59AM"
+    }
   ]
 }
