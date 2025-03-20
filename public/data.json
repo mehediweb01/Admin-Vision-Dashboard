@@ -148,5 +148,37 @@
       "image": "/images/item.png",
       "value": 85
     }
+  ],
+  "projectsData": [
+    {
+      "name": "UI Version",
+      "member": "M",
+      "amount": 2000,
+      "progress": 60
+    },
+    {
+      "name": "Progress Track",
+      "member": "H",
+      "amount": 1000,
+      "progress": 80
+    },
+    {
+      "name": "Full Stack dyn",
+      "member": "J",
+      "amount": 6000,
+      "progress": 40
+    },
+    {
+      "name": "Platform Errors",
+      "member": "K",
+      "amount": 4000,
+      "progress": 75
+    },
+    {
+      "name": "Redesign UI/UX",
+      "member": "Y",
+      "amount": 8000,
+      "progress": 100
+    }
   ]
 }
