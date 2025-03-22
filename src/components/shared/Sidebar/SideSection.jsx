@@ -23,7 +23,7 @@ function SideSection() {
 
       {/* Sidebar */}
       <div
-        className={`hidden md:inline-block w-full rounded-r-lg min-h-screen ps-2 ${
+        className={`hidden md:inline-block w-full rounded-r-lg min-h-screen ps-1 ${
           isOpen ? "inline-block mt-6 md:mt-0" : "hidden"
         }`}
       >
