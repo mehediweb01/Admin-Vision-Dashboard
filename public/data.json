@@ -212,5 +212,42 @@
       "name": "License",
       "href": "/License"
     }
+  ],
+  "invoice": [
+    {
+      "id": 1,
+      "date": "February, 01, 2023",
+      "invoiceId": "#MV-82154",
+      "amount": "$500",
+      "downloadOption": "pdf"
+    },
+    {
+      "id": 2,
+      "date": "January, 31, 2023",
+      "invoiceId": "#MM-49158",
+      "amount": "$2500",
+      "downloadOption": "pdf"
+    },
+    {
+      "id": 3,
+      "date": "March, 10, 2025",
+      "invoiceId": "#MG-82853",
+      "amount": "$1500",
+      "downloadOption": "pdf"
+    },
+    {
+      "id": 4,
+      "date": "October, 15, 2021",
+      "invoiceId": "#MC-82184",
+      "amount": "$900",
+      "downloadOption": "pdf"
+    },
+    {
+      "id": 5,
+      "date": "December, 26, 2024",
+      "invoiceId": "#MR-89154",
+      "amount": "$800",
+      "downloadOption": "pdf"
+    }
   ]
 }
