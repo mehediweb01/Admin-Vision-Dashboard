@@ -5,6 +5,9 @@ import VisionCard from "../components/billing/VisionCard";
 import CreditBalance from "../components/billing/CreditBalance";
 import Invoice from "../components/billing/Invoice";
 import PaymentMethod from "../components/billing/PaymentMethod";
+import Footer from "./../components/shared/Footer";
+import BillingInformation from "../components/billing/BillingInformation";
+import Transactions from "../components/billing/Transactions";
 
 const Billing = () => {
   return (
@@ -29,6 +32,17 @@ const Billing = () => {
               <Invoice />
             </div>
           </div>
+        </div>
+        <div className="flex lg:flex-row flex-col items-start justify-start lg:justify-between gap-4 mx-2 my-4">
+          <div className="lg:w-[60%] w-full">
+            <BillingInformation />
+          </div>
+          <div className="lg:w-[40%] w-full">
+            <Transactions />
+          </div>
+        </div>
+        <div className="my-4">
+          <Footer />
         </div>
       </div>
     </main>

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="min-h-screen flex bg-gradient-to-r from-blue-300/75 to-slate-800">
+        <main className="min-h-screen flex bg-gradient-to-r from-blue-500/75 to-slate-800">
           <div className="w-full">
             <Routes>
               <Route path="/" element={<Dashboard />} />

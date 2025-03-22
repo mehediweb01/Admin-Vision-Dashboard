@@ -13,7 +13,7 @@ const PaymentMethod = () => {
             add a new card
           </button>
         </div>
-        <div className="flex md:flex-row flex-col items-center justify-between gap-2">
+        <div className="flex md:flex-row flex-col items-start justify-between gap-4">
           <div className="flex justify-between items-center gap-8 border border-white px-4 py-4 rounded-2xl shadow-md shadow-white">
             <div className="flex items-center gap-4">
               <IconSvg />
