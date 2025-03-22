@@ -4,6 +4,7 @@ import { CgProfile } from "react-icons/cg";
 import { ImProfile } from "react-icons/im";
 import { VscSearch } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import Footer from "../components/shared/Footer";
 
 function SignIn() {
   return (
@@ -102,15 +103,8 @@ function SignIn() {
               Don't have an account? <Link to="/sign-up">Sign up</Link>
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center mt-[5%] text-gray-600">
-            <p>
-              @ 2021, Made with ❤️ by Simple & Creative Tim for a better web
-            </p>
-            <div className="flex gap-6">
-              <Link to="/sign-in">Marketplace</Link>
-              <Link to="/sign-in">Blog</Link>
-              <Link to="/sign-in">License</Link>
-            </div>
+          <div className="w-full">
+            <Footer />
           </div>
         </div>
       </div>

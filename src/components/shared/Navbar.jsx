@@ -1,12 +1,13 @@
 import { Breadcrumbs, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 
 const Navbar = () => {
+  const location = useLocation();
   return (
     <main className="py-4 px-2 rounded-md flex justify-center md:justify-between items-center shadow-sm shadow-white bg-transparent/25">
       <div className="md:block hidden">
@@ -17,12 +18,16 @@ const Navbar = () => {
           <Link
             underline="hover"
             className="text-white text-base sm:text-xl font-serif hover:text-black/50 transition-all duration-300"
-            href="/material-ui/getting-started/installation/"
+            to={location.pathname}
           >
-            Dashboard
+            {location.pathname === "/"
+              ? "Dashboard"
+              : location.pathname.slice(1)}
           </Link>
         </Breadcrumbs>
-        <p className="text-white text-base sm:text-xl font-serif">Dashboard</p>
+        <p className="text-white text-base sm:text-xl font-serif">
+          {location.pathname === "/" ? "Dashboard" : location.pathname.slice(1)}
+        </p>
       </div>
       <div className="flex gap-2 items-center">
         <div className="align-middle">
