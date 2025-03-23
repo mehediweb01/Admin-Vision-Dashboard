@@ -7,6 +7,7 @@ import CarInformation from "../components/profile/CarInformation";
 import ProfileInformation from "../components/profile/ProfileInformation";
 import PlatformSetting from "../components/profile/PlatformSetting";
 import Projects from "../components/profile/Projects";
+import Footer from "../components/shared/Footer";
 
 const Profile = () => {
   return (
@@ -39,6 +40,9 @@ const Profile = () => {
               <Projects />
             </div>
           </div>
+        </div>
+        <div className="my-5">
+          <Footer />
         </div>
       </div>
     </div>
