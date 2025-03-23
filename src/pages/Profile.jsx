@@ -31,7 +31,6 @@ const Profile = () => {
               <ProfileInformation />
             </div>
           </div>
-
           <div className="grid grid-cols-5 gap-4 mt-4">
             <div className="lg:col-span-1 col-span-5">
               <PlatformSetting />

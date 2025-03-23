@@ -24,7 +24,7 @@ const CarInformation = () => {
     },
   ];
   return (
-    <div className="h-full px-4 py-7 bg-gradient-to-br from-white/60 via-black/60 to-red-400/40 rounded-lg shadow-md shadow-black flex flex-col justify-start items-start gap-4">
+    <div className="w-full h-full px-4 py-7 bg-gradient-to-br from-white/60 via-black/60 to-red-400/40 rounded-lg shadow-md shadow-black flex flex-col justify-start items-start gap-4">
       <div>
         <h1 className="font-bold font-serif text-2xl leading-5 text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-500/60">
           Car Information
@@ -33,7 +33,7 @@ const CarInformation = () => {
           Hello, Mehedi Hasan, your car is ready.
         </p>
       </div>
-      <div className="flex sm:flex-row flex-col justify-between items-start gap-3">
+      <div className="w-full flex sm:flex-row flex-col justify-between items-start gap-3">
         <div>
           <div className="space-y-2">
             <div className="relative bg-black/40 rounded-full">
@@ -60,10 +60,13 @@ const CarInformation = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
           {details.map((detail, index) => (
-            <div key={index} className="bg-black/40 rounded-md px-4 py-2">
-              <div className="flex justify-start items-center">
+            <div
+              key={index}
+              className="bg-black/40 rounded-md px-4 py-2 w-full"
+            >
+              <div className="flex justify-between items-center">
                 <div>
                   <h1 className="font-medium text-sm text-white">
                     {detail.title}
