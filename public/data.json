@@ -309,5 +309,31 @@
       "amount": "$900",
       "type": "Deposit"
     }
+  ],
+  "projectData": [
+    {
+      "id": 1,
+      "img": "/images/project.jpg",
+      "projectCount" : "project #1",
+      "name": "Modern",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "label": "view All"
+    },
+    {
+      "id": 2,
+      "img": "/images/project.jpg",
+      "projectCount" : "project #2",
+      "name": "Modern",
+      "description": "Lorem ipsum dolor sit amet consectetur. adipisicing elit.",
+      "label": "view All"
+    },
+    {
+      "id": 3,
+      "img": "/images/project.jpg",
+      "projectCount" : "project #3",
+      "name": "Minimalist",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "label": "view All"
+    }
   ]
 }

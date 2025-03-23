@@ -6,6 +6,7 @@ import ProfileWelcome from "../components/profile/ProfileWelcome";
 import CarInformation from "../components/profile/CarInformation";
 import ProfileInformation from "../components/profile/ProfileInformation";
 import PlatformSetting from "../components/profile/PlatformSetting";
+import Projects from "../components/profile/Projects";
 
 const Profile = () => {
   return (
@@ -35,7 +36,9 @@ const Profile = () => {
             <div className="lg:col-span-1 col-span-5">
               <PlatformSetting />
             </div>
-            <div className="lg:col-span-4 col-span-5 bg-red-600">2</div>
+            <div className="lg:col-span-4 col-span-5">
+              <Projects />
+            </div>
           </div>
         </div>
       </div>
