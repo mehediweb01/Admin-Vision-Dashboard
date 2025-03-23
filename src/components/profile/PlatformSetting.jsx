@@ -24,6 +24,12 @@ const PlatformSetting = () => {
               Email me when someone mentions me
             </p>
           </div>
+          <div className="flex items-center ">
+            <Switch color="warning" />
+            <p className="text-white/80 text-base lg:text-xs  ">
+              Email me when someone mentions me
+            </p>
+          </div>
         </div>
       </div>
       <div className="mt-4">
@@ -47,6 +53,12 @@ const PlatformSetting = () => {
             <Switch color="warning" />
             <p className="text-white/80 text-base lg:text-xs ">
               Yearly product updates
+            </p>
+          </div>
+          <div className="flex items-center ">
+            <Switch color="warning" defaultChecked />
+            <p className="text-white/80 text-base lg:text-xs ">
+              permanent product updates
             </p>
           </div>
         </div>
