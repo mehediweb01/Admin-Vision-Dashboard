@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard";
 import SignIn from "./pages/SignIn";
 import PageNotFound from "./PageNotFound";
 import Billing from "./pages/Billing";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Route path="/billing" element={<Billing />} />
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="*" element={<PageNotFound />} />
+              <Route path="/sign-up" element={ <SignUp/>} />
             </Routes>
           </div>
         </main>
