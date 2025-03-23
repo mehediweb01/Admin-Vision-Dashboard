@@ -5,6 +5,7 @@ import ProfileHeader from "../components/profile/ProfileHeader";
 import ProfileWelcome from "../components/profile/ProfileWelcome";
 import CarInformation from "../components/profile/CarInformation";
 import ProfileInformation from "../components/profile/ProfileInformation";
+import PlatformSetting from "../components/profile/PlatformSetting";
 
 const Profile = () => {
   return (
@@ -28,6 +29,13 @@ const Profile = () => {
             <div className="col-span-2 sm:col-span-2 md:col-span-2 lg:h-[333px] h-full ">
               <ProfileInformation />
             </div>
+          </div>
+
+          <div className="grid grid-cols-5 gap-4 mt-4">
+            <div className="lg:col-span-1 col-span-5">
+              <PlatformSetting />
+            </div>
+            <div className="lg:col-span-4 col-span-5 bg-red-600">2</div>
           </div>
         </div>
       </div>
