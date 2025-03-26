@@ -13,15 +13,12 @@ function Tables() {
       </div>
       <div className="w-full">
         <Navbar />
-        <div>
-          {" "}
+        <div className="mt-4 ms-1">
           <Author />
         </div>
-        <div className="mt-16">
-          {" "}
+        <div className="mt-16 mb-4 ms-1">
           <Projects />
         </div>
-
         <Footer />
       </div>
     </div>

@@ -6,7 +6,7 @@ import { FaHotTub, FaPaperPlane } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import { IoNewspaperOutline } from "react-icons/io5";
 import HelpCard from "./HelpCard";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function SideSection() {
   const [isOpen, setOpen] = useState(false);
@@ -35,58 +35,107 @@ function SideSection() {
 
         {/* Sidebar Menu */}
         <ul className="flex flex-col sm:items-start items-center">
-          <Link to={"/"} className="flex items-center gap-3">
-            <div className="bg-blue-900 p-3 rounded-full text-white my-3">
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-3 rounded-full my-3">
               <MdOutlineDashboardCustomize />
             </div>
-            <span className="text-white hidden sm:inline-block">Dashboard</span>
-          </Link>
+            <span className="hidden sm:inline-block">Dashboard</span>
+          </NavLink>
 
-          <Link to="/tables" className="flex items-center gap-3">
-            <div className="bg-blue-900 p-2 rounded-full text-white my-3">
+          <NavLink
+            to="/tables"
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-2 rounded-full my-3">
               <IoMdStats />
             </div>
-            <span className="text-white hidden sm:inline-block">Tables</span>
-          </Link>
+            <span className="hidden sm:inline-block">Tables</span>
+          </NavLink>
 
-          <Link to="/billing" className="flex items-center gap-3">
-            <div className="bg-blue-900 p-2 rounded-full text-white my-3">
+          <NavLink
+            to="/billing"
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-2 rounded-full my-3">
               <FaHotTub />
             </div>
-            <span className="text-white hidden sm:inline-block">Billing</span>
-          </Link>
+            <span className="hidden sm:inline-block">Billing</span>
+          </NavLink>
 
-          <Link to="/rtl" className="flex items-center gap-3">
-            <div className="bg-blue-900 p-2 rounded-full text-white my-3">
+          <NavLink
+            to="/rtl"
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-2 rounded-full my-3">
               <GrTechnology className="fill-white" />
             </div>
-            <span className="text-white hidden sm:inline-block">RTL</span>
-          </Link>
+            <span className="hidden sm:inline-block">RTL</span>
+          </NavLink>
         </ul>
 
         {/* Account Pages */}
         <h3 className="text-white py-3 text-sm sm:text-base ">Account Pages</h3>
         <ul className="flex flex-col sm:items-start items-center">
-          <Link to="/profile" className="flex items-center gap-4">
-            <div className="bg-blue-900 p-2 rounded-full text-white my-3">
+          <NavLink
+            to="/profile"
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-2 rounded-full my-3">
               <IoMdPerson />
             </div>
-            <span className="text-white hidden sm:inline-block">Profile</span>
-          </Link>
+            <span className="hidden sm:inline-block">Profile</span>
+          </NavLink>
 
-          <Link to="/sign-in" className="flex items-center gap-3">
-            <div className="bg-blue-900 p-2 rounded-full text-white my-3">
+          <NavLink
+            to="/sign-in"
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-2 rounded-full my-3">
               <IoNewspaperOutline />
             </div>
-            <span className="text-white hidden sm:inline-block">Sign In</span>
-          </Link>
+            <span className="hidden sm:inline-block">Sign In</span>
+          </NavLink>
 
-          <Link to="/sign-up" className="flex items-center gap-4">
-            <div className="bg-blue-900 p-2 rounded-full text-white">
+          <NavLink
+            to="/sign-up"
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-4 text-green-300 font-semibold "
+                : "text-white flex items-center gap-4"
+            }
+          >
+            <div className="bg-blue-900 p-2 rounded-full">
               <FaPaperPlane />
             </div>
-            <span className="text-white hidden sm:inline-block">Sign Up</span>
-          </Link>
+            <span className="hidden sm:inline-block">Sign Up</span>
+          </NavLink>
         </ul>
 
         {/* Help Card */}

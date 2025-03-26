@@ -3,8 +3,8 @@ import { IoMdTimer } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { ImProfile } from "react-icons/im";
 import { VscSearch } from "react-icons/vsc";
-import { Link } from "react-router-dom";
 import Footer from "../components/shared/Footer";
+import { NavLink } from "react-router-dom";
 
 function SignIn() {
   return (
@@ -16,39 +16,58 @@ function SignIn() {
             <p>Dashboard UI</p>
           </div>
           <div className="flex md:flex-row flex-col gap-6 text-sm items-center justify-center text-white">
-            <Link to="/" className="flex justify-center items-center gap-1">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex justify-center items-center gap-1 text-green-300 font-semibold "
+                  : "text-white flex justify-center items-center gap-1"
+              }
+            >
               <span>
                 <IoMdTimer />
               </span>
               <span>DASHBOARD</span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/profile"
-              className="flex gap-1 justify-center items-center"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex justify-center items-center gap-1 text-green-300 font-semibold "
+                  : "text-white flex justify-center items-center gap-1"
+              }
             >
               <span>
                 <CgProfile />
               </span>
               <span>PROFILE</span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/sign-up"
-              className="flex gap-1 justify-center items-center"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex justify-center items-center gap-1 text-green-300 font-semibold "
+                  : "text-white flex justify-center items-center gap-1"
+              }
             >
               <span>
                 <ImProfile />
               </span>
               <span>SIGN UP</span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/sign-in"
-              className="flex gap-1 justify-center items-center"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex justify-center items-center gap-1 text-green-300 font-semibold "
+                  : "text-white flex justify-center items-center gap-1"
+              }
             >
               <span>
                 <VscSearch />
               </span>
               <span>SIGN IN</span>
-            </Link>
+            </NavLink>
           </div>
           <div className="sm:flex hidden justify-center items-center">
             <button className="text-white border border-black rounded-md bg-blue-700 text-sm p-2 hover:cursor-pointer hover:scale-105 transition-all">
@@ -109,9 +128,9 @@ function SignIn() {
               </form>
               <p className="text-center mt-5">
                 Don't have an account?{" "}
-                <Link to="/sign-in" className="font-bold">
-                  Sign IN
-                </Link>
+                <NavLink to="/sign-up" className="font-bold">
+                  Sign Up
+                </NavLink>
               </p>
             </div>
           </div>

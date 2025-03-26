@@ -1,24 +1,21 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
-import Progress from '../dashboard/Progress';
+import React from "react";
+import { useState, useEffect } from "react";
+import Progress from "../dashboard/Progress";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { CiCircleCheck } from "react-icons/ci";
 
-
-
 function Projects() {
-         const [tableData, setTableData] = useState([]);
-         useEffect(() => {
-           fetch("/data.json")
-             .then((res) => res.json())
-             .then((data) => setTableData(data.tableData));
-         }, [tableData]);
+  const [tableData, setTableData] = useState([]);
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => setTableData(data.tableData));
+  }, [tableData]);
   return (
     <div className="bg-gradient-to-r from-blue-600/40 to-black/60 px-4 py-6 rounded-2xl">
-      <div className='text-white '>
-        <h1 className='text-2xl'>Projects</h1>
+      <div className="text-white ">
+        <h1 className="text-2xl">Projects</h1>
         <p className="flex gap-1 items-center">
-          {" "}
           <span>
             <CiCircleCheck className="text-white0" />{" "}
           </span>
@@ -29,7 +26,7 @@ function Projects() {
         <table className="min-w-full table-auto border-collapse text-start">
           <thead>
             <tr className="border-b border-amber-400">
-              {["COMPANIES",  "BUDGET","STATUS", "COMPLETION"].map(
+              {["COMPANIES", "BUDGET", "STATUS", "COMPLETION"].map(
                 (heading) => (
                   <th
                     key={heading}
@@ -71,8 +68,37 @@ function Projects() {
           </tbody>
         </table>
       </div>
+      {/* mobile device table */}
+      <div className="block md:hidden my-4 space-y-4">
+        {tableData.map((details) => (
+          <div
+            key={details.id}
+            className="bg-amber-900/30 p-4 rounded-lg shadow-lg text-white my-2"
+          >
+            <div className="flex items-center gap-3">
+              <img
+                src={details.img}
+                alt={details.name}
+                className="w-12 h-12 rounded-lg"
+              />
+              <h1 className="text-lg font-medium">{details.name}</h1>
+            </div>
+            <div className="mt-3">
+              <p className="text-sm">Budget: {details.budget}</p>
+              <p className="text-sm font-bold">Status: {details.status}</p>
+            </div>
+            <div className="mt-2">
+              <p className="text-sm">Completion:</p>
+              <Progress value={details.completion} />
+            </div>
+            <div className="flex justify-end mt-2">
+              <BsThreeDotsVertical className="text-white size-6" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-export default Projects
+export default Projects;

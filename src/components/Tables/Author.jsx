@@ -8,7 +8,7 @@ function Author() {
       .then((data) => setAuthorData(data.authorData));
   }, [authorData]);
   return (
-    <div className="bg-gradient-to-r from-blue-600/60 to-black/80 px-4 py-6 rounded-2xl">
+    <div className="bg-gradient-to-r from-blue-600/40 to-black/60 px-4 py-6 rounded-2xl">
       <h1 className="text-2xl text-white">Authors Table</h1>
       <div>
         <div className="md:block hidden overflow-x-auto my-4">
@@ -25,36 +25,36 @@ function Author() {
                 ))}
               </tr>
             </thead>
-            <tbody className="">
+            <tbody>
               {authorData.map((details) => (
-                <tr key={details.id} className="border-b border-amber-200 ">
+                <tr key={details.id} className="border-b border-amber-200">
                   <td className="text-white text-xl font-medium font-serif">
                     <div className="flex gap-1 items-center">
-                      <div>
-                        <img
-                          src={details.img}
-                          alt={details.name}
-                          className="w-10 h-10 rounded-lg"
-                        />
-                      </div>
+                      <img
+                        src={details.img}
+                        alt={details.name}
+                        className="w-10 h-10 rounded-lg"
+                      />
                       <div>
                         <h1>{details.name}</h1>
                         <p className="text-sm text-white/50">{details.email}</p>
                       </div>
                     </div>
                   </td>
-                  <td className="  text-white">
+                  <td className="text-white">
                     <h1>{details.job}</h1>
                     <p className="text-white/50">{details.possition}</p>
                   </td>
-                  <td
-                    className={`text-white/80 text-base tracking-wider rounded-3xl  ${
-                      details.status === "Online"
-                        ? "bg-green-400 w-9"
-                        : "bg-transparent"
-                    }`}
-                  >
-                    <p className="text-center"> {details.status}</p>
+                  <td>
+                    <p
+                      className={`text-base tracking-wider rounded-md py-2 text-center w-[70%] lg:w-[55%] font-semibold ${
+                        details.status === "Online"
+                          ? "bg-green-400 text-slate-900"
+                          : "bg-transparent border border-white text-white"
+                      }`}
+                    >
+                      {details.status}
+                    </p>
                   </td>
                   <td className=" text-white">
                     <p>{details.employed}</p>
@@ -67,6 +67,46 @@ function Author() {
             </tbody>
           </table>
         </div>
+      </div>
+      {/* mobile device table */}
+      <div className="block md:hidden my-4 space-y-4">
+        {authorData.map((details) => (
+          <div
+            key={details.id}
+            className="bg-amber-900/30 p-4 rounded-lg shadow-lg text-white my-2"
+          >
+            <div className="flex items-center gap-3">
+              <img
+                src={details.img}
+                alt={details.name}
+                className="w-12 h-12 rounded-lg"
+              />
+              <div>
+                <h1 className="text-lg font-medium">{details.name}</h1>
+                <p className="text-sm text-white/50">{details.email}</p>
+              </div>
+            </div>
+            <div className="mt-3">
+              <h2 className="font-semibold">{details.job}</h2>
+              <p className="text-white/50">{details.possition}</p>
+            </div>
+            <div className="mt-2 flex justify-between items-center">
+              <p className="text-sm">Employed: {details.employed}</p>
+              <span
+                className={`px-3 py-1 rounded-full text-sm tracking-wide ${
+                  details.status === "Online"
+                    ? "bg-green-400 text-black"
+                    : "bg-gray-600"
+                }`}
+              >
+                {details.status}
+              </span>
+            </div>
+            <p className="text-right text-white/60 text-sm mt-2">
+              {details.edit}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
