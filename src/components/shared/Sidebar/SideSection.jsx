@@ -42,7 +42,7 @@ function SideSection() {
             <span className="text-white hidden sm:inline-block">Dashboard</span>
           </Link>
 
-          <Link to={"/tables"} className="flex items-center gap-3">
+          <Link to="/tables" className="flex items-center gap-3">
             <div className="bg-blue-900 p-2 rounded-full text-white my-3">
               <IoMdStats />
             </div>
