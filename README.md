@@ -50,6 +50,6 @@ npm run dev
 ## Contact
 
 **Live URL:** [Live Site](https://admin-vision-dashboard.vercel.app/)
-**Email:** [username](mehedihasan87456@gmail.com)
+**Email:** [mehedihasan87456@gmail.com](mehedihasan87456@gmail.com)
 **Portfolio:** [Portfolio](https://mdmehedihasan.vercel.app/)c
 
